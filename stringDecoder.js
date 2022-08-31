@@ -1,9 +1,10 @@
+
+
 const decoder = code => {
     let decoded = ""
     for (i = 0; i < code.length; i++) {
-      number = +code[i]
-      if (number !== NaN) {
-        i += number +1
+      if (+code[i] !== NaN) {
+        i += +code[i] +1
         decoded += code[i]
       }
     }
